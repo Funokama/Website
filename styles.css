@@ -1,22 +1,19 @@
 /* ============================================
-   Academic Website – David Nhan
-   Style: classic academic (think MIT/Stanford
-   faculty pages). Restrained palette, serif
-   typography, generous whitespace.
+   Personal Website – David Nhan
+   Style: modern, clean student portfolio.
    ============================================ */
 
 :root {
   --color-bg: #ffffff;
-  --color-surface: #f7f5f0;
-  --color-text: #1a1a1a;
-  --color-muted: #555;
-  --color-line: #d8d4cc;
-  --color-accent: #8a1538;     /* Berner Burgundrot */
-  --color-accent-dark: #5e0e26;
-  --color-link: #8a1538;
+  --color-surface: #f3f4f6;
+  --color-text: #111827;
+  --color-muted: #6b7280;
+  --color-line: #e5e7eb;
+  --color-accent: #2563eb;
+  --color-accent-dark: #1d4ed8;
+  --color-link: #2563eb;
 
-  --font-serif: "Source Serif 4", "Source Serif Pro", "Iowan Old Style",
-                "Palatino Linotype", Palatino, Georgia, serif;
+  --font-serif: "Source Serif 4", Georgia, serif;
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Helvetica, Arial, sans-serif;
 
@@ -33,8 +30,8 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  font-family: var(--font-serif);
-  font-size: 18px;
+  font-family: var(--font-sans);
+  font-size: 17px;
   line-height: 1.65;
   color: var(--color-text);
   background: var(--color-bg);
@@ -53,18 +50,19 @@ a {
 a:hover { border-bottom-color: var(--color-link); }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-serif);
-  font-weight: 600;
+  font-family: var(--font-sans);
+  font-weight: 700;
   line-height: 1.25;
   margin: 0 0 .6em;
   color: var(--color-text);
 }
 h1 { font-size: 2.2rem; letter-spacing: -0.01em; }
 h2 {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   margin-top: 2.4rem;
   padding-bottom: .35rem;
-  border-bottom: 1px solid var(--color-line);
+  border-bottom: 2px solid var(--color-accent);
+  display: inline-block;
 }
 h3 { font-size: 1.15rem; margin-top: 1.6rem; }
 
@@ -92,9 +90,9 @@ p { margin: 0 0 1rem; }
 }
 
 .nav-brand {
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 0.01em;
   color: var(--color-text);
   border-bottom: none;
@@ -159,27 +157,28 @@ main {
 /* -------- Home: hero -------- */
 .hero {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 200px 1fr;
   gap: 2.5rem;
-  align-items: start;
+  align-items: center;
   margin-bottom: 3rem;
 }
 
 .hero-photo {
-  width: 220px;
-  height: 270px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
-  border: 1px solid var(--color-line);
-  filter: grayscale(15%);
+  border-radius: 50%;
+  border: 3px solid var(--color-line);
+  filter: grayscale(0%);
 }
 
 .hero-text h1 { margin-bottom: .25rem; }
 .hero-title {
   font-family: var(--font-sans);
-  font-size: 0.95rem;
-  color: var(--color-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-size: 1rem;
+  color: var(--color-accent);
+  font-weight: 500;
+  letter-spacing: 0;
   margin-bottom: 1rem;
 }
 
@@ -317,6 +316,7 @@ main {
 }
 .tag-card {
   background: var(--color-surface);
+  border-radius: 8px;
   border-left: 3px solid var(--color-accent);
   padding: .9rem 1.1rem;
 }
@@ -381,8 +381,8 @@ main {
     gap: 1.5rem;
   }
   .hero-photo {
-    width: 160px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     margin: 0 auto;
   }
   .hero-text { text-align: center; }
