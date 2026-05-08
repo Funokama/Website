@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — David Nhan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-brand">David Nhan</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-narrow">
+      <h1>Research</h1>
+      <p class="lead">
+        My work to date sits at the intersection of <em>behavioural
+        economics</em>, <em>microeconomic theory</em>, and <em>quantitative
+        methods</em>. I am particularly interested in how psychologically
+        grounded extensions of classical models can more realistically
+        explain the behaviour of economic agents.
+      </p>
+
+      <h2>Research Areas</h2>
+      <div class="research-area">
+        <h3>Behavioural Economics &amp; Public Goods</h3>
+        <p>
+          Examining how reference-dependent preferences, warm-glow effects,
+          and altruism reshape the classical free-rider problem in sequential
+          contribution games.
+        </p>
+      </div>
+      <div class="research-area">
+        <h3>Microeconomic Theory</h3>
+        <p>
+          Extensions of classical equilibrium models (e.g. Varian, 1994) with
+          behavioural components and their welfare implications.
+        </p>
+      </div>
+      <div class="research-area">
+        <h3>Econometrics &amp; Data Analysis</h3>
+        <p>
+          Applied causal identification strategies (OLS, 2SLS, fixed effects)
+          and data analysis with <code>R</code>, <code>Python</code>, and
+          <code>Stata</code>.
+        </p>
+      </div>
+
+      <h2>Publications &amp; Working Papers</h2>
+
+      <article class="publication">
+        <div class="pub-title">
+          Impact of reference-dependence on a sequential contributions game to public goods
+        </div>
+        <div class="pub-meta">
+          Bachelor's thesis · University of Bern, Faculty of Business, Economic and Social Sciences · November 2024<br />
+          Supervisor: Prof. Dr. Jean-Michel Benkert
+        </div>
+        <p class="pub-abstract">
+          This thesis examines the impact of reference-dependent preferences
+          on a sequential contribution game of public goods, expanding on
+          traditional models where free-riding behaviour is common. By
+          incorporating reference dependency (where agents' wealth acts as a
+          reference point) and warm-glow effects (intrinsic satisfaction from
+          giving), the thesis analyses how these behavioural factors
+          influence agents' contributions. Different forms of the warm-glow
+          function (linear, concave, convex) are explored, and a disutility
+          term is introduced to account for the discrepancy between
+          contributions by different agents. The analysis demonstrates that
+          these behavioural components significantly alter the equilibrium,
+          reducing the tendency for free-riding and encouraging more equal
+          contributions, resulting in higher overall provision than under
+          traditional models.
+        </p>
+        <div class="pub-links">
+          <a href="docs/Bachelor_Thesis.pdf" target="_blank" rel="noopener">PDF</a>
+          <a href="docs/Bachelor_Thesis.pdf#page=3" target="_blank" rel="noopener">Abstract</a>
+        </div>
+      </article>
+
+      <article class="publication">
+        <div class="pub-title muted">
+          Forthcoming · Master's thesis (in preparation)
+        </div>
+        <div class="pub-meta">
+          MSc Economics · University of Bern · from 2026
+        </div>
+        <p class="pub-abstract muted">
+          Topic selection in the area of behavioural economics and
+          international economics. More information will follow.
+        </p>
+      </article>
+
+      <h2>Tools &amp; Methods</h2>
+      <div class="tag-grid">
+        <div class="tag-card">
+          <h4>Statistics &amp; Econometrics</h4>
+          <ul>
+            <li>OLS, 2SLS, fixed effects</li>
+            <li>Causal inference</li>
+            <li>Hypothesis testing</li>
+          </ul>
+        </div>
+        <div class="tag-card">
+          <h4>Software</h4>
+          <ul>
+            <li>R, Stata</li>
+            <li>Python (NumPy, pandas)</li>
+            <li>MATLAB</li>
+          </ul>
+        </div>
+        <div class="tag-card">
+          <h4>Theory</h4>
+          <ul>
+            <li>Game theory</li>
+            <li>Mechanism design</li>
+            <li>Behavioural economics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> David Nhan · University of Bern ·
+    <a href="https://www.linkedin.com/in/david-nhan-41972a270/" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

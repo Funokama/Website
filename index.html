@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>David Nhan — University of Bern</title>
+  <meta name="description" content="Personal academic website of David Nhan, MSc student in Economics at the University of Bern." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="nav-brand">David Nhan</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <img src="docs/LinkedIn1.png" alt="Portrait of David Nhan" class="hero-photo" />
+      <div class="hero-text">
+        <h1>David Nhan</h1>
+        <p class="hero-title">MSc Student · Economics</p>
+        <p class="hero-affiliation">
+          Department of Economics<br />
+          University of Bern, Switzerland
+        </p>
+        <p class="lead">
+          I am a master's student in Economics at the University of Bern, with
+          an additional background in Computer Science. My interests lie in
+          international economics and politics — with a particular focus on
+          East Asia — and at the intersection of quantitative economic
+          analysis and modern data processing.
+        </p>
+
+        <ul class="contact-list" id="contact">
+          <li><span class="label">Email</span> <a href="mailto:david.nhan@students.unibe.ch">david.nhan@students.unibe.ch</a></li>
+          <li><span class="label">Phone</span> <a href="tel:+41764314279">+41 76 431 42 79</a></li>
+          <li><span class="label">Address</span> Rosenweg 9, 3252 Worben, Switzerland</li>
+          <li><span class="label">Office</span> University of Bern, IMU</li>
+          <li><span class="label">LinkedIn</span> <a href="https://www.linkedin.com/in/david-nhan-41972a270/" target="_blank" rel="noopener">linkedin.com/in/david-nhan</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="container-narrow">
+      <section>
+        <h2>About</h2>
+        <p>
+          After studying Electrical Engineering and Computer Science at ETH
+          Zurich, I continued my academic path at the University of Bern,
+          where I completed my Bachelor of Science in
+          <em>Economics and Computer Science</em> in 2026. Since then, I have
+          been deepening my knowledge of modern microeconomics,
+          macroeconomics, econometrics, and quantitative methods in the
+          master's programme.
+        </p>
+        <p>
+          Alongside my studies, I work as an IT teaching assistant at the
+          <em>Institute of Marketing and Management (IMU)</em> at the
+          University of Bern, and as an IT consultant at Corporate Software,
+          where I help organisations adopt Microsoft 365 solutions.
+        </p>
+      </section>
+
+      <section>
+        <h2>Research Interests</h2>
+        <div class="research-area">
+          <h3>Behavioural Economics</h3>
+          <p class="muted">Reference-dependent preferences, warm-glow giving, and contributions to public goods.</p>
+        </div>
+        <div class="research-area">
+          <h3>International Economics &amp; East Asia</h3>
+          <p class="muted">Economic and political developments in China, Japan, and the wider region.</p>
+        </div>
+        <div class="research-area">
+          <h3>Quantitative Methods &amp; Data Science</h3>
+          <p class="muted">Application of statistical and computational methods to economic questions.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>News</h2>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">2026</span>
+            <span>Started the MSc programme in Economics at the University of Bern.</span>
+          </li>
+          <li>
+            <span class="news-date">2025</span>
+            <span>Promoted to IT Consultant at Corporate Software.</span>
+          </li>
+          <li>
+            <span class="news-date">Nov 2024</span>
+            <span>Submitted my bachelor's thesis <em>“Impact of reference-dependence on a sequential contributions game to public goods”</em>, supervised by Prof. Dr. Jean-Michel Benkert.</span>
+          </li>
+          <li>
+            <span class="news-date">2024</span>
+            <span>Joined the IMU at the University of Bern as an IT teaching assistant.</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="year"></span> David Nhan · University of Bern ·
+    <a href="https://www.linkedin.com/in/david-nhan-41972a270/" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
