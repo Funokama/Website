@@ -21,6 +21,7 @@
   - timeline cards, skill cards, project cards, documents cards, dark contact section
 - Added hobbies block and photo-strip layout to mirror the reference section structure.
 - Added lightbox markup so gallery interactions work with existing script.
+- Removed all placeholder gallery/hobbies images from the one-page layout.
 
 ## Current state
 
@@ -37,12 +38,17 @@
 
 ## Remaining tasks (User)
 
-1. Provide real gallery images (recommended 7 to 12 images) for hobbies/photo sections.
-2. Provide final short captions for each gallery image.
+1. Provide real gallery images (recommended 7 to 12 images) to re-enable the visual sections.
+2. Provide final short captions for each image.
 3. Confirm whether you want language switching (EN only or EN+DE).
 4. Optional for custom domain (URL without github):
    - buy domain
    - provide DNS access or provider details
+
+## Current visual decision
+
+- The site remains a single-page scroll layout.
+- Placeholder images were intentionally removed until real images are provided.
 
 ## Optional custom domain setup
 
