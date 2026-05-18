@@ -179,6 +179,26 @@ p {
     line-height: 1;
 }
 
+.btn-icon {
+    width: 1.05rem;
+    height: 1.05rem;
+    flex-shrink: 0;
+}
+
+.btn-icon-in {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.05rem;
+    height: 1.05rem;
+    border: 1.6px solid currentColor;
+    border-radius: 50%;
+    font-size: 0.62rem;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: lowercase;
+}
+
 /* Filled accent button */
 .btn-primary {
     background-color: var(--color-accent);
