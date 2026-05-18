@@ -183,6 +183,7 @@ p {
     width: 1.05rem;
     height: 1.05rem;
     flex-shrink: 0;
+    display: block;
 }
 
 .btn-icon-in {
@@ -197,6 +198,10 @@ p {
     font-weight: 700;
     line-height: 1;
     text-transform: lowercase;
+}
+
+.btn-icon path {
+    vector-effect: non-scaling-stroke;
 }
 
 /* Filled accent button */
@@ -766,6 +771,10 @@ main {
 .skill-group:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
+}
+
+.skill-group-wide {
+    grid-column: 1 / -1;
 }
 
 .skill-group-title {
