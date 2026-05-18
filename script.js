@@ -1,6 +1,6 @@
 /* ================================================================
-   script.js — Thanh Truc Phan Personal Website
-   ================================================================
+    script.js — Personal Website
+    ================================================================
 
    This file handles three things:
    1. Mobile navigation toggle (hamburger menu)
