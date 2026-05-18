@@ -7,174 +7,376 @@
   <meta name="description" content="Personal portfolio of David Nhan, MSc student in Economics with a focus on data, economics, and applied analysis." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a href="index.html" class="nav-brand">David Nhan</a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about" class="active">About</a></li>
-        <li><a href="#education">Education</a></li>
+  <header class="nav-header">
+    <nav class="nav-container" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Top">DN</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#documents">Documents</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero-panel">
-      <div class="hero-grid">
-        <div>
-          <p class="eyebrow">Hello, I am</p>
-          <h1>David Nhan</h1>
-          <p class="hero-title">MSc Student in Economics</p>
-          <p class="lead">
-            I focus on applied economics, quantitative analysis, and data-driven
-            decision making. My work combines economics, econometrics, and
-            practical business technology.
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text reveal">
+          <p class="hero-greeting">Hello, I am</p>
+          <h1 class="hero-name">David Nhan</h1>
+          <p class="hero-headline">MSc Student in Economics</p>
+          <span class="hero-sub-headline">Data and Business Analysis · Macro, Micro and Econometrics</span>
+          <p class="hero-intro">
+            I am a master's student in economics with a focus on applied analysis,
+            econometrics, and data-informed decision making. I enjoy combining
+            quantitative methods with practical business and technology contexts.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="docs/David-Nhan-FlowCV-Lebenslauf.pdf" target="_blank" rel="noopener">Download CV</a>
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/david-nhan-41972a270/" target="_blank" rel="noopener">LinkedIn</a>
+          <div class="hero-badges">
+            <span class="badge badge-location">Bern, Switzerland</span>
+            <span class="badge badge-open"><span class="pulse-dot"></span>Open for internships and entry-level roles</span>
           </div>
-          <ul class="quick-facts">
-            <li><strong>Location:</strong> Worben, Switzerland</li>
-            <li><strong>Email:</strong> <a href="mailto:david.nhan@students.unibe.ch">david.nhan@students.unibe.ch</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+41764314279">+41 76 431 42 79</a></li>
-          </ul>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="docs/David-Nhan-FlowCV-Lebenslauf.pdf" target="_blank" rel="noopener">Download CV</a>
+            <a class="btn btn-secondary" href="mailto:david.nhan@students.unibe.ch">Email</a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/david-nhan-41972a270/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
         </div>
-        <div class="hero-image-wrap">
-          <img src="docs/LinkedIn1.png" alt="Portrait of David Nhan" class="hero-photo" />
+        <div class="hero-image-wrapper reveal">
+          <div class="hero-image-ring">
+            <img id="profileImg" src="docs/LinkedIn1.png" alt="Portrait of David Nhan" class="hero-image" />
+          </div>
+          <div class="hero-image-card">
+            <div>
+              <span>University of Bern</span>
+              <small>Economics MSc</small>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        I completed my BSc in Economics and Computer Science at the University
-        of Bern and I am currently pursuing my MSc in Economics. I am interested
-        in macroeconomics, microeconomics, behavioural economics, and applied
-        econometrics.
-      </p>
-      <p>
-        Alongside my studies, I work in IT and consulting roles where I support
-        users, improve digital workflows, and train teams in Microsoft 365 tools.
-      </p>
-      <div class="stats-grid">
-        <article class="stat-card"><h3>5</h3><p>Languages</p></article>
-        <article class="stat-card"><h3>2+</h3><p>Years in IT Roles</p></article>
-        <article class="stat-card"><h3>3</h3><p>Core Tracks: Macro, Micro, Econometrics</p></article>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Who I Am</span>
+          <h2>About</h2>
+        </div>
+        <div class="about-content reveal">
+          <p>
+            I completed my BSc in Economics and Computer Science at the University of Bern
+            and I am currently pursuing my MSc in Economics. My focus areas include macroeconomics,
+            microeconomics, behavioural economics, and applied econometrics.
+          </p>
+          <p>
+            Alongside my studies, I work in IT and consulting roles. I support users,
+            improve digital workflows, and deliver practical Microsoft 365 training.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <article class="highlight-card reveal">
+            <span class="highlight-number">5</span>
+            <span class="highlight-label">Languages</span>
+          </article>
+          <article class="highlight-card reveal">
+            <span class="highlight-number">2+</span>
+            <span class="highlight-label">Years Experience</span>
+            <span class="highlight-sub">IT and Consulting</span>
+          </article>
+          <article class="highlight-card reveal">
+            <span class="highlight-number">3</span>
+            <span class="highlight-label">Core Focus Areas</span>
+            <span class="highlight-sub">Macro · Micro · Econometrics</span>
+          </article>
+        </div>
+
+        <h3 class="about-sub-heading reveal">Beyond Studies</h3>
+        <div class="hobbies-grid">
+          <article class="hobby-card reveal">
+            <div class="hobby-photo"><img src="docs/LinkedIn1.png" alt="Sports" /></div>
+            <div class="hobby-body">
+              <h3>Sports</h3>
+              <p>Fitness, martial arts, and endurance activities to stay focused and disciplined.</p>
+            </div>
+          </article>
+          <article class="hobby-card reveal">
+            <div class="hobby-photo"><img src="docs/LinkedIn1.png" alt="Travel" /></div>
+            <div class="hobby-body">
+              <h3>Travel</h3>
+              <p>Discovering new places and perspectives, with special interest in East Asia.</p>
+            </div>
+          </article>
+          <article class="hobby-card reveal">
+            <div class="hobby-photo"><img src="docs/LinkedIn1.png" alt="Music and learning" /></div>
+            <div class="hobby-body">
+              <h3>Music & Learning</h3>
+              <p>Guitar, piano, and continuous language learning beyond the classroom.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="photo-subsection reveal">
+          <div class="photo-subsection-header">
+            <div>
+              <h3>Photography & Visuals</h3>
+              <p>Gallery layout aligned with the reference style. Image set can be replaced anytime.</p>
+            </div>
+          </div>
+          <div class="photo-strip">
+            <figure class="photo-tile"><img src="docs/LinkedIn1.png" alt="Gallery image 1" /><figcaption>Portfolio visual 1</figcaption></figure>
+            <figure class="photo-tile"><img src="docs/LinkedIn1.png" alt="Gallery image 2" /><figcaption>Portfolio visual 2</figcaption></figure>
+            <figure class="photo-tile"><img src="docs/LinkedIn1.png" alt="Gallery image 3" /><figcaption>Portfolio visual 3</figcaption></figure>
+            <figure class="photo-tile"><img src="docs/LinkedIn1.png" alt="Gallery image 4" /><figcaption>Portfolio visual 4</figcaption></figure>
+            <figure class="photo-tile"><img src="docs/LinkedIn1.png" alt="Gallery image 5" /><figcaption>Portfolio visual 5</figcaption></figure>
+            <figure class="photo-tile"><img src="docs/LinkedIn1.png" alt="Gallery image 6" /><figcaption>Portfolio visual 6</figcaption></figure>
+            <figure class="photo-tile"><img src="docs/LinkedIn1.png" alt="Gallery image 7" /><figcaption>Portfolio visual 7</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Professional Path</span>
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2025 - Present</span>
+                <span class="timeline-tag tag-current">Current</span>
+              </div>
+              <h3>IT Consultant (40%)</h3>
+              <p class="timeline-institution">Corporate Software, Bern</p>
+              <ul class="timeline-details">
+                <li>Advised clients on Microsoft 365 adoption and digital process automation</li>
+                <li>Delivered client training and onboarding sessions</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2024 - Present</span>
+                <span class="timeline-tag tag-current">Current</span>
+              </div>
+              <h3>IT Teaching Assistant (40%)</h3>
+              <p class="timeline-institution">Institute of Marketing and Management, University of Bern</p>
+              <ul class="timeline-details">
+                <li>First-level IT support and website maintenance</li>
+                <li>Administrative and digital process support</li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="education" class="section">
-      <h2>Education</h2>
-      <div class="timeline">
-        <article class="timeline-item">
-          <p class="timeline-date">2026 - Present</p>
-          <h3>MSc in Economics</h3>
-          <p class="muted">University of Bern</p>
-        </article>
-        <article class="timeline-item">
-          <p class="timeline-date">2021 - 2026</p>
-          <h3>BSc in Economics and Computer Science</h3>
-          <p class="muted">University of Bern</p>
-        </article>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Academic Path</span>
+          <h2>Education</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2026 - Present</span>
+                <span class="timeline-tag tag-current">Current</span>
+              </div>
+              <h3>MSc in Economics</h3>
+              <p class="timeline-institution">University of Bern, Switzerland</p>
+              <ul class="timeline-details">
+                <li>Focus on macroeconomics, microeconomics, and econometrics</li>
+                <li>Master thesis topic currently in preparation</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-date">2021 - 2026</span>
+              </div>
+              <h3>BSc in Economics and Computer Science</h3>
+              <p class="timeline-institution">University of Bern, Switzerland</p>
+              <ul class="timeline-details">
+                <li>Bachelor thesis on reference dependence in sequential public goods games</li>
+                <li>Strong foundation in quantitative methods and data analysis</li>
+              </ul>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <article class="timeline-item">
-          <p class="timeline-date">2025 - Present</p>
-          <h3>IT Consultant (40%)</h3>
-          <p class="muted">Corporate Software, Bern</p>
-          <ul>
-            <li>M365 adoption and workflow automation support</li>
-            <li>Client training sessions and onboarding</li>
-          </ul>
-        </article>
-        <article class="timeline-item">
-          <p class="timeline-date">2024 - Present</p>
-          <h3>IT Teaching Assistant (40%)</h3>
-          <p class="muted">Institute of Marketing and Management, University of Bern</p>
-          <ul>
-            <li>First-level IT support and website maintenance</li>
-            <li>Administrative and digital process support</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="chip-group">
-        <span class="chip">Python</span>
-        <span class="chip">R</span>
-        <span class="chip">Stata</span>
-        <span class="chip">MATLAB</span>
-        <span class="chip">SQL</span>
-        <span class="chip">Econometrics</span>
-        <span class="chip">Data Analysis</span>
-        <span class="chip">M365</span>
-        <span class="chip">German</span>
-        <span class="chip">English</span>
-        <span class="chip">French</span>
-        <span class="chip">Cantonese</span>
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What I Bring</span>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <h3 class="skill-group-title">Languages</h3>
+            <div class="skill-tags">
+              <div class="skill-tag-language"><span class="lang-name">German</span><span class="lang-level lang-native">Native</span></div>
+              <div class="skill-tag-language"><span class="lang-name">English</span><span class="lang-level">Fluent</span></div>
+              <div class="skill-tag-language"><span class="lang-name">French</span><span class="lang-level">Advanced</span></div>
+              <div class="skill-tag-language"><span class="lang-name">Cantonese</span><span class="lang-level">Fluent</span></div>
+              <div class="skill-tag-language"><span class="lang-name">Mandarin</span><span class="lang-level">Basic</span></div>
+            </div>
+          </article>
+          <article class="skill-group reveal">
+            <h3 class="skill-group-title">Technical Tools</h3>
+            <div class="skill-tags">
+              <span class="skill-badge skill-badge-tech">Python</span>
+              <span class="skill-badge skill-badge-tech">R</span>
+              <span class="skill-badge skill-badge-tech">Stata</span>
+              <span class="skill-badge skill-badge-tech">MATLAB</span>
+              <span class="skill-badge skill-badge-tech">SQL</span>
+              <span class="skill-badge skill-badge-tech">Microsoft 365</span>
+            </div>
+          </article>
+          <article class="skill-group reveal">
+            <h3 class="skill-group-title">Professional Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-badge">Data Analysis</span>
+              <span class="skill-badge">Economic Modelling</span>
+              <span class="skill-badge">Econometrics</span>
+              <span class="skill-badge">Quantitative Research</span>
+              <span class="skill-badge">Business Process Support</span>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
     <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-card-body">
-            <p class="project-meta">Bachelor Thesis - Nov 2024</p>
-            <h3>Reference Dependence in Public Goods Contributions</h3>
-            <p>
-              Extended a sequential public goods model with reference-dependent
-              preferences and warm-glow effects to study free-riding behaviour.
-            </p>
-            <a href="docs/Bachelor_Thesis.pdf" target="_blank" rel="noopener">Read thesis</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <div class="project-card-body">
-            <p class="project-meta">Academic Records</p>
-            <h3>Coursework Documentation</h3>
-            <p>
-              Full study record and detailed course descriptions are available in
-              my official university transcript document.
-            </p>
-            <a href="docs/2026-02-09_11.55.48_Studienblatt.pdf" target="_blank" rel="noopener">View transcript</a>
-          </div>
-        </article>
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Academic Work</span>
+          <h2>Projects and Highlights</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-card-body">
+              <p class="project-meta">Bachelor Thesis · Nov 2024</p>
+              <h3>Reference Dependence in Sequential Public Goods Games</h3>
+              <p>
+                Analysis of how reference dependence and warm-glow preferences alter
+                equilibrium contributions and reduce free-riding in a sequential setup.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Behavioural Economics</span>
+                <span class="project-tag">Game Theory</span>
+                <span class="project-tag">Public Goods</span>
+              </div>
+              <a class="project-read-link" href="docs/Bachelor_Thesis.pdf" target="_blank" rel="noopener">Read paper</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card-body">
+              <p class="project-meta">Coursework Compilation</p>
+              <h3>Official Transcript and Course Descriptions</h3>
+              <p>
+                Structured overview of modules, learning objectives, and completed
+                work in economics, econometrics, and computer science.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Economics</span>
+                <span class="project-tag">Econometrics</span>
+                <span class="project-tag">Data Science</span>
+              </div>
+              <a class="project-read-link" href="docs/2026-02-09_11.55.48_Studienblatt.pdf" target="_blank" rel="noopener">View transcript</a>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-card-body">
+              <p class="project-meta">Practical IT Projects</p>
+              <h3>M365 Adoption and Process Improvement</h3>
+              <p>
+                Client-facing implementation support and user training for improved
+                digital collaboration and process efficiency.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">M365</span>
+                <span class="project-tag">Automation</span>
+                <span class="project-tag">Consulting</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section section-contact">
-      <h2>Let us connect</h2>
-      <p>
-        I am open to internships, trainee opportunities, and entry-level roles
-        in economics, analytics, and business-related fields.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="mailto:david.nhan@students.unibe.ch">Send email</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/david-nhan-41972a270/" target="_blank" rel="noopener">LinkedIn profile</a>
+    <section id="documents" class="section section-alt">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Documentation</span>
+          <h2>Additional Documents</h2>
+        </div>
+        <p class="documents-notice reveal">
+          For data privacy reasons, full certificates, grade transcripts, references,
+          and additional academic work are shared on request during applications.
+        </p>
+        <div class="documents-grid">
+          <article class="document-card reveal"><h3>CV</h3><p>Available online</p></article>
+          <article class="document-card reveal"><h3>Transcript</h3><p>Available online</p></article>
+          <article class="document-card reveal"><h3>References</h3><p>On request</p></article>
+          <article class="document-card reveal"><h3>Certificates</h3><p>On request</p></article>
+          <article class="document-card reveal"><h3>Academic Work</h3><p>On request</p></article>
+        </div>
       </div>
     </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-inner reveal">
+          <span class="section-label">Contact</span>
+          <h2>Let us connect</h2>
+          <p class="contact-description">
+            I am open to internships, trainee programmes, and entry-level positions
+            in economics, analytics, business, and related fields.
+          </p>
+          <div class="contact-buttons">
+            <a class="btn btn-primary" href="mailto:david.nhan@students.unibe.ch">Send Email</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/in/david-nhan-41972a270/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-outline" href="docs/David-Nhan-FlowCV-Lebenslauf.pdf" target="_blank" rel="noopener">CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+      <button type="button" class="lightbox-close" aria-label="Close image">×</button>
+      <figure class="lightbox-figure">
+        <img id="lightboxImg" class="lightbox-img" alt="Expanded view" />
+        <figcaption id="lightboxCaption" class="lightbox-caption"></figcaption>
+      </figure>
+    </div>
   </main>
 
-  <footer class="site-footer">
-    © <span id="year"></span> David Nhan · Bern, Switzerland ·
-    <a href="https://www.linkedin.com/in/david-nhan-41972a270/" target="_blank" rel="noopener">LinkedIn</a>
+  <footer class="footer">
+    <p>© <span id="year"></span> David Nhan · Bern, Switzerland</p>
+    <p class="footer-note">Built with HTML, CSS and JavaScript</p>
   </footer>
 
   <script src="script.js"></script>

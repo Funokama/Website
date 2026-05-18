@@ -2,53 +2,53 @@
 
 ## Domain costs
 
-- A custom domain is not free in most cases.
-- Typical prices in Switzerland:
-  - .ch: around 10 to 20 CHF per year
-  - .com: around 10 to 18 CHF per year
-- Hosting can still be free with GitHub Pages, Netlify, or Cloudflare Pages.
-- Optional privacy protection and premium DNS can add extra yearly cost depending on provider.
+- A custom domain is usually not free.
+- Typical yearly prices in Switzerland:
+  - .ch: around 10 to 20 CHF
+  - .com: around 10 to 18 CHF
+- Hosting can remain free with GitHub Pages.
 
-## What has been done
+## What has been completed
 
-- Created and published an English personal website structure in this repository.
-- Added LinkedIn links across the website.
-- Removed professor-style affiliation wording from the homepage.
-- Renamed navigation and page from Research to Projects.
-- Reworked homepage into a modern one-page portfolio style similar to thanhphan.ch.
-- Updated styling for modern cards, timeline, chips, hero section, and anchor navigation.
-- Confirmed via DNS and headers that thanhphan.ch is hosted on GitHub Pages with a custom domain.
+- Re-analysed https://thanhphan.ch/en/ (structure, design tokens, breakpoints, section IDs).
+- Confirmed the reference website uses GitHub Pages behind a custom domain.
+- Updated homepage structure to match the same one-page pattern:
+  - #hero, #about, #experience, #education, #skills, #projects, #documents, #contact
+- Updated navigation to anchor-based menu with matching order and mobile toggle behavior.
+- Applied reference-like typography and design language:
+  - Inter body font, Playfair Display hero heading
+  - soft blue-gray palette and rounded cards
+  - timeline cards, skill cards, project cards, documents cards, dark contact section
+- Added hobbies block and photo-strip layout to mirror the reference section structure.
+- Added lightbox markup so gallery interactions work with existing script.
 
-## Current technical state
+## Current state
 
-- Local latest commit exists:
-  - 4d6f707 Redesign homepage to one-page portfolio style
-- Push to remote failed with:
-  - 403 Permission denied to current GitHub account (DavidNhan) for Funokama/Website
+- Website is live on GitHub Pages:
+  - https://funokama.github.io/Website/
+- The layout now follows the same design system and section architecture as the reference.
 
-## What still needs to be done
+## Remaining tasks (Agent)
 
-1. Authenticate Git with the correct GitHub account that has write access to Funokama/Website.
-2. Push local commit to remote main branch.
-3. Verify GitHub Pages build succeeds.
-4. Optional: connect custom domain later.
+1. Final visual polish pass after real images are provided:
+   - replace placeholder gallery images
+   - tune card heights and spacing per final content lengths
+2. Optional: align multilingual behavior (EN/DE switch) if requested.
 
-## Login and push flow (run in terminal)
+## Remaining tasks (User)
 
-1. Sign out cached GitHub account (if needed):
-   - git credential-manager github logout
-2. Login with the correct GitHub account:
-   - git credential-manager github login
-3. Push:
-   - git push
+1. Provide real gallery images (recommended 7 to 12 images) for hobbies/photo sections.
+2. Provide final short captions for each gallery image.
+3. Confirm whether you want language switching (EN only or EN+DE).
+4. Optional for custom domain (URL without github):
+   - buy domain
+   - provide DNS access or provider details
 
-If your machine does not recognize git credential-manager commands, use GitHub Desktop sign-out/sign-in and push there, then continue in terminal.
+## Optional custom domain setup
 
-## Optional custom domain setup (later)
-
-- Buy domain at preferred registrar.
-- In repository settings, GitHub Pages, set custom domain.
-- Configure DNS:
-  - Root domain A records to GitHub Pages IPs
-  - www CNAME to your GitHub Pages host
-- Wait for DNS propagation and enable HTTPS.
+- Buy domain from registrar.
+- Set custom domain in GitHub Pages settings.
+- DNS records:
+  - apex/root: GitHub Pages A records
+  - www: CNAME to your GitHub Pages host
+- Wait for DNS propagation and enable HTTPS in Pages settings.
